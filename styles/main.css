@@ -1,8 +1,18 @@
 .images {
     border: 2px solid black;
-    display: inline-flex;
+    display: flex;
     border-radius: 10px;
-    padding: 1px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    /* display: inline-block; */
 }
 
 .align-center {
@@ -11,7 +21,7 @@
 
 .projects-grid {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 24px;
     justify-content: center;
     margin-top: 32px;
@@ -33,11 +43,10 @@
     box-shadow: 4px 8px 16px rgba(3, 68, 79, 0.18);
     border-color: burlywood;
     cursor: pointer;
-
 }
 
 .tech-logo {
-        background:#ded9c8;
+        background:#fcfbf8;
         border:1px solid #636060; 
         border-radius:8px; 
         padding: 8px; 
@@ -55,4 +64,22 @@
     transform: translateY(-2px)scale(1.03);
     border-color: rgb(177, 171, 163);
     cursor: pointer;
+}
+.nkedingimage{
+    width: 10rem;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icons div img{
+    border: 1px solid bisque;
+    width: 50px;
+    object-fit: cover;
+    /* height: 30px; */
 }
