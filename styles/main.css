@@ -1,3 +1,9 @@
+body {
+    background-color: #fffae1b8;
+    font-family: Caviar;
+    margin: 0;
+    padding: 0;
+}
 .images {
     border: 2px solid black;
     display: flex;
@@ -78,8 +84,8 @@
 }
 
 .icons div img{
-    border: 1px solid bisque;
-    width: 50px;
+    border: auto;
+    width: 35px;
     object-fit: cover;
     /* height: 30px; */
 }
