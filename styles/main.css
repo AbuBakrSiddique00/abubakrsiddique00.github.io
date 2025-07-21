@@ -34,13 +34,13 @@ body {
 }
 
 .project-block {
-    background: black;
+    background: #fffae1b8;
     border: 1px solid burlywood;
     border-radius: 14px;
     padding: 24px;
     width: 320px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 12);
-    color: white;
+    color: black;
     transition: transform 0.3s;
 }
 
@@ -70,9 +70,6 @@ body {
     transform: translateY(-2px)scale(1.03);
     border-color: rgb(177, 171, 163);
     cursor: pointer;
-}
-.nkedingimage{
-    width: 10rem;
 }
 
 .icons{
