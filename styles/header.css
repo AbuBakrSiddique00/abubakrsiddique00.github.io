@@ -1,12 +1,24 @@
 .header-nav {
     background-color: #fffae1b8;
     padding: 5px 0;
-    text-align: center;
+    position: relative;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav li:first-child {
+    position: absolute;
+    left: 20px;
+}
+
 .header-nav li {
-    display: inline;
+    display: inline
 
 }
 
@@ -21,4 +33,10 @@
 .header-nav a:hover {
     font-family: 'Georgia', 'Times New Roman', serif;
     color: #000000;
+}
+.header-nav li:first-child img {
+    /* border: auto; */
+    width: 40px;
+    object-fit: cover;
+    /* height: 30px; */
 }
