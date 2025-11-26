@@ -1,51 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic</title>
-    <link rel="icon" type="image/x-icon" href="media/f.png">
+    <title>Academic - Abu Bakr Siddique</title>
+    <link rel="icon" type="image/png" href="media/f.png">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
 </head>
-
 <body>
-    <div class="header-nav">
-        <ul>
-            <li><a href="index.html"><img src="media/f.png"></a></li>
-            <li><a href="academic.html"><span style="color: black;">Academic</span></a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <!-- <li><a href="certificates.html">Certificates</a></li> -->
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <br>
-    <h1 class="align-center">Academic Background</h1>
-    <h2 class="align-center">My formal education and qualifications.</h2>
-    <div class="projects-grid">
-        <p class="project-block">
-            <b>Secondary School Certificate (SSC)</b><br><br>
-            <span style="font-size: 0.9em; color: black;">2019-2020</span><br><br>
-            <i>Gyangriho Adarsho High School</i><br>
-            Raipura, Narsingdi, Dhaka.
-        </p>
-        <p class="project-block">
-            <b>Higher Secondary School Certificate </b><br><br>
-            <span style="font-size:0.9em; color: black;">2021-2022</span><br><br>
+    <header class="site-header">
+        <div class="nav">
+            <a class="brand" href="index.html">
+                <img src="media/f.png" alt="Logo">
+                <span>Abu Bakr Siddique</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a class="active" href="academic.html">Academic</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
 
-            <i>Narsingdi Science Collage</i> <br>
-            Narsingdi, Dhaka.
-        </p>
-        <p class="project-block">
-            <b>BSc in Computer Science and Engineering</b> <br><br>
-            <span style="font-size: 0.9em; color: black;">2023-Present</span><br><br>
-            <i>University of Rajshahi</i><br>
-            Rajshahi, Bangladesh.
-        </p>
-    </div>
-    <p class="align-center">&copy; 2025 Abu Bakr Siddique. All rights reserved.</p>
+    <main class="page-shell">
+        <section data-reveal>
+            <span class="eyebrow">Academic journey</span>
+            <h1>Learning with intention and curiosity.</h1>
+            <p class="lead">I value rigor, clarity, and applying what I learn to build real things.</p>
+        </section>
+
+        <section class="section" data-reveal>
+            <div class="timeline">
+                <article class="card timeline-card">
+                    <div class="card-content">
+                        <span class="tag">2019 - 2020</span>
+                        <h3>Secondary School Certificate (SSC)</h3>
+                        <p class="meta">Gyangriho Adarsho High School — Raipura, Narsingdi, Dhaka</p>
+                    </div>
+                </article>
+                <article class="card timeline-card">
+                    <div class="card-content">
+                        <span class="tag">2021 - 2022</span>
+                        <h3>Higher Secondary School Certificate (HSC)</h3>
+                        <p class="meta">Narsingdi Science College — Narsingdi, Dhaka</p>
+                    </div>
+                </article>
+                <article class="card timeline-card">
+                    <div class="card-content">
+                        <span class="tag">2023 - Present</span>
+                        <h3>BSc in Computer Science and Engineering</h3>
+                        <p class="meta">University of Rajshahi — Rajshahi, Bangladesh</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section card contact-card" data-reveal>
+            <div class="card-content">
+                <span class="eyebrow">Beyond the classroom</span>
+                <h2>Building things that test ideas quickly.</h2>
+                <p class="meta">From competitive programming (500+ problems solved) to shipping full-stack apps, I enjoy the loop of learning, experimenting, and sharing.</p>
+            </div>
+            <div class="card-content">
+                <div class="chips">
+                    <span class="chip">Problem solving</span>
+                    <span class="chip">Researching LLMs</span>
+                    <span class="chip">Systems thinking</span>
+                    <span class="chip">Collaboration</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-shell">
+            <div class="footer-row">
+                <div>© 2025 Abu Bakr Siddique. All rights reserved.</div>
+                <div class="socials">
+                    <a href="https://github.com/AbuBakrSiddique00" target="_blank" rel="noopener noreferrer">
+                        <img src="media/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/abu-bakr-siddique-602190286/" target="_blank" rel="noopener noreferrer">
+                        <img src="media/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://discordapp.com/users/dopamime_16" target="_blank" rel="noopener noreferrer">
+                        <img src="media/Discord.png" alt="Discord">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCn3Hy3i4MWtsrQvLLq_ASaw" target="_blank" rel="noopener noreferrer">
+                        <img src="media/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="mailto:abubackersiddique29@gmail.com">
+                        <img src="media/mail.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>

@@ -3,46 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="icon" type="image/x-icon" href="media/f.png">
+    <title>Projects - Abu Bakr Siddique</title>
+    <link rel="icon" type="image/png" href="media/f.png">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
 </head>
-
 <body>
-    <div class="header-nav">
-        <ul>
-            <li><a href="index.html"><img src="media/f.png"></a></li>
-            <li><a href="academic.html">Academic</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html"><span style="color: black;">Projects</span></a></li>
-            <!-- <li><a href="certificates.html">Certificates</a></li> -->
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <br>
-
-    <div class="align-center">
-        <h1>Featured Projects</h1>
-        <h2>A selection of projects showcasing my skills and interests.</h2>
-    
-        <div>
-            <div class="projects-grid">
-                 <div class="project-block">
-                    <b>Ongoing Project</b> <br>
-                    <u>Simple Chat Appliction</u> 
-                    <div style="text-align: left;">
-                    <li>Using Django backend, ReactJS frontend.</li>
-                    <li>Websocket, wbrtc for live communication.</li> 
-                    <li>STUN and TURN server for ip modification.</li>
-                    </div>
-                </div>
-                
+    <header class="site-header">
+        <div class="nav">
+            <a class="brand" href="index.html">
+                <img src="media/f.png" alt="Logo">
+                <span>Abu Bakr Siddique</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="academic.html">Academic</a>
+                <a href="skills.html">Skills</a>
+                <a class="active" href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
+    </header>
 
-    </div>
-    <p class="align-center">&copy; 2025 Abu Bakr Siddique. All rights reserved.</p>
+    <main class="page-shell">
+        <section data-reveal>
+            <span class="eyebrow">Featured work</span>
+            <h1>Selected projects with intention.</h1>
+            <p class="lead">A quick view into what I build and how I think about shipping.</p>
+        </section>
 
+        <section class="section grid grid-3" data-reveal>
+            <article class="card">
+                <div class="card-content">
+                    <span class="tag">Ongoing</span>
+                    <h3>Simple Chat Application</h3>
+                    <p class="meta">Full-stack chat with live communication and privacy controls.</p>
+                    <ul class="list">
+                        <li>Django backend with token-based auth and REST APIs.</li>
+                        <li>ReactJS frontend tuned for snappy interactions.</li>
+                        <li>Realtime via WebSockets and WebRTC.</li>
+                        <li>STUN/TURN servers to make connectivity reliable.</li>
+                    </ul>
+                    <div class="chips">
+                        <span class="chip">Django</span>
+                        <span class="chip">React</span>
+                        <span class="chip">WebRTC</span>
+                        <span class="chip">WebSockets</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section card contact-card" data-reveal>
+            <div class="card-content">
+                <span class="eyebrow">More to come</span>
+                <h2>Always iterating.</h2>
+                <p class="meta">I am continuously exploring AI-powered features and polished user experiences. Have an idea? Let's talk.</p>
+            </div>
+            <div class="card-content">
+                <a class="btn btn-primary" href="contact.html">Start a conversation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-shell">
+            <div class="footer-row">
+                <div>© 2025 Abu Bakr Siddique. All rights reserved.</div>
+                <div class="socials">
+                    <a href="https://github.com/AbuBakrSiddique00" target="_blank" rel="noopener noreferrer">
+                        <img src="media/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/abu-bakr-siddique-602190286/" target="_blank" rel="noopener noreferrer">
+                        <img src="media/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://discordapp.com/users/dopamime_16" target="_blank" rel="noopener noreferrer">
+                        <img src="media/Discord.png" alt="Discord">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCn3Hy3i4MWtsrQvLLq_ASaw" target="_blank" rel="noopener noreferrer">
+                        <img src="media/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="mailto:abubackersiddique29@gmail.com">
+                        <img src="media/mail.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

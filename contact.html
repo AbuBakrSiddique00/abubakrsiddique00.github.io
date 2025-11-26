@@ -3,56 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Abu Bakr Siddique</title>
     <link rel="icon" type="image/png" href="media/f.png">
-    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="header-nav">
-        <ul>
-            <li><a href="index.html"><img src="media/f.png"></a></li>
-            <li><a href="academic.html">Academic</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <!-- <li><a href="certificates.html">Certificates</a></li> -->
-            <li><a href="contact.html"><span style="color: black;">Contact</span></a></li>
-        </ul>
-    </div>
-    <br>
-
-    <h1 style="text-align: center;">My Online Footprint</h1>
- <div>
-            <div class="icons">
-                <div>
-                    <a href="https://github.com/AbuBakrSiddique00" target="_blank">
-                        <img src="media/github.png">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/abu-bakr-siddique-602190286/" target="_blank">
-                        <img src="media/linkedin.png">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://discordapp.com/users/dopamime_16" target="_blank">
-                        <img src="media/Discord.png">
-                    </a>
-                </div>
-                <div>
-
-                    <a href="https://www.youtube.com/channel/UCn3Hy3i4MWtsrQvLLq_ASaw" target="_blank">
-                        <img src="media/youtube.png">
-                    </a>
-                </div>
-                <div>
-                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abubackersiddique29@gmail.com" target="_blank">
-                        <img src="media/mail.png">
-                    </a>
-                </div>
-
+    <header class="site-header">
+        <div class="nav">
+            <a class="brand" href="index.html">
+                <img src="media/f.png" alt="Logo">
+                <span>Abu Bakr Siddique</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="academic.html">Academic</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a class="active" href="contact.html">Contact</a>
             </div>
-        <p class="align-center">&copy; 2025 Abu Bakr Siddique. All rights reserved.</p>
-    </div>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section data-reveal>
+            <span class="eyebrow">Let's talk</span>
+            <h1>Reach out for collaborations, ideas, or a quick chat.</h1>
+            <p class="lead">I respond quickly when there's a clear problem to solve or a fun experiment to run.</p>
+        </section>
+
+        <section class="section card contact-card" data-reveal>
+            <div class="card-content">
+                <span class="tag">Preferred</span>
+                <h3>Email</h3>
+                <p class="meta">abubackersiddique29@gmail.com</p>
+                <a class="btn btn-primary" href="mailto:abubackersiddique29@gmail.com">Write an email</a>
+            </div>
+            <div class="card-content">
+                <h3>Social</h3>
+                <div class="socials">
+                    <a href="https://github.com/AbuBakrSiddique00" target="_blank" rel="noopener noreferrer">
+                        <img src="media/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/abu-bakr-siddique-602190286/" target="_blank" rel="noopener noreferrer">
+                        <img src="media/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://discordapp.com/users/dopamime_16" target="_blank" rel="noopener noreferrer">
+                        <img src="media/Discord.png" alt="Discord">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCn3Hy3i4MWtsrQvLLq_ASaw" target="_blank" rel="noopener noreferrer">
+                        <img src="media/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="mailto:abubackersiddique29@gmail.com">
+                        <img src="media/mail.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-shell">
+            <div class="footer-row">
+                <div>© 2025 Abu Bakr Siddique. All rights reserved.</div>
+                <div class="socials">
+                    <a href="https://github.com/AbuBakrSiddique00" target="_blank" rel="noopener noreferrer">
+                        <img src="media/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/abu-bakr-siddique-602190286/" target="_blank" rel="noopener noreferrer">
+                        <img src="media/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://discordapp.com/users/dopamime_16" target="_blank" rel="noopener noreferrer">
+                        <img src="media/Discord.png" alt="Discord">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCn3Hy3i4MWtsrQvLLq_ASaw" target="_blank" rel="noopener noreferrer">
+                        <img src="media/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="mailto:abubackersiddique29@gmail.com">
+                        <img src="media/mail.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,128 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abu Bakr Siddique</title>
     <link rel="icon" type="image/png" href="media/f.png">
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-
-<body class="bg-warning-subtle">
-    <!-- Bootstrap Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light warning-subtle shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="media/f.png" alt="Logo" class="img-fluid" style="height: 40px; width: auto;">
+<body>
+    <header class="site-header">
+        <div class="nav">
+            <a class="brand" href="index.html">
+                <img src="media/f.png" alt="Logo">
+                <span>Abu Bakr Siddique</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="academic.html">Academic</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="skills.html">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+            <div class="nav-links">
+                <a class="active" href="index.html">Home</a>
+                <a href="academic.html">Academic</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Main Content Container -->
-    <div class="container mt-5">
-        <div class="row align-items-center justify-content-center">
-            <!-- Profile Image -->
-            <div class="col-md-4 text-center mb-4">
-                <img src="media/abs.png" alt="Abu Bakr Siddique" 
-                     class="img-fluid rounded-circle shadow border border-3 border-secondary" 
-                     style="width: 200px; height: 200px; object-fit: cover;">
-            </div>
-
-            <!-- Introduction Text -->
-            <div class="col-md-8">
-                <h1 class="text-center mb-4 fw-bold">Greetings, I'm Abu Bakr Siddique</h1>
-                <div class="card shadow">
-                    <div class="card-body">
-                        <p class="card-text fs-5 fst-italic lh-lg">
-                            A programmer with over three years of expertise in crafting
-                            innovative solutions using Python, JavaScript, HTML, CSS, and C++. My web development integrity shines
-                            through robust backend frameworks like Django and FastAPI, paired with dynamic ReactJS
-                            frontends. I am familiar with Azure.
-                            <br><br>
-                            Currently, I'm diving into the exciting realms of Large Language Models (LLMs),
-                            Segment Anything Model (SAM), and AI agents, pushing the boundaries of intelligent technology.
-                        </p>
-                    </div>
+    <main class="page-shell">
+        <section class="hero" data-reveal>
+            <div>
+                <span class="eyebrow">Software Engineer - Backend & AI tinkerer</span>
+                <h1>Turning reliable backends and playful interfaces into memorable products.</h1>
+                <p class="lead">
+                    I craft with Python, JavaScript, HTML, CSS, and C++, pairing Django or FastAPI services with lively React frontends.
+                    Recently, I have been diving deep into LLMs, SAM, and AI agents to push what intelligent tools can feel like.
+                </p>
+                <div class="cta-row">
+                    <a class="btn btn-primary" href="projects.html">See projects</a>
+                    <a class="btn btn-ghost" href="https://www.notion.so/23c6b8b5935480238f48c6b14c7d600b?v=23c6b8b5935480de8811000cb4d26977" target="_blank" rel="noopener noreferrer">My memories</a>
+                </div>
+                <div class="chips">
+                    <span class="chip">Python - FastAPI - Django</span>
+                    <span class="chip">ReactJS frontends</span>
+                    <span class="chip">Azure & PostgreSQL</span>
+                    <span class="chip">500+ problems solved</span>
                 </div>
             </div>
-        </div>
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <img class="profile-img" src="media/abs.png" alt="Abu Bakr Siddique">
+                </div>
+                <div class="floating-note">
+                    Exploring LLMs, SAM, and AI agents to blend reasoning with delightful experiences.
+                </div>
+            </div>
+        </section>
 
-        <!-- My Memories Button -->
-        <div class="text-center my-5">
-            <a href="https://www.notion.so/23c6b8b5935480238f48c6b14c7d600b?v=23c6b8b5935480de8811000cb4d26977"
-                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg px-5 py-3">
-                My Memories
-            </a>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-white py-4 mt-8">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h5 class="mb-3">Connect with me</h5>
-                    <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
-                        <a href="https://github.com/AbuBakrSiddique00" target="_blank" rel="noopener noreferrer" class="text-white">
-                            <img src="media/github.png" alt="GitHub" class="img-fluid rounded" 
-                                 style="width: 40px; height: 40px; object-fit: contain; transition: transform 0.3s ease;"
-                                 onmouseover="this.style.transform='scale(1.1)'" 
-                                 onmouseout="this.style.transform='scale(1)'">
-                        </a>
-                        <a href="https://www.linkedin.com/in/abu-bakr-siddique-602190286/" target="_blank" rel="noopener noreferrer" class="text-white">
-                            <img src="media/linkedin.png" alt="LinkedIn" class="img-fluid rounded"
-                                 style="width: 40px; height: 40px; object-fit: contain; transition: transform 0.3s ease;"
-                                 onmouseover="this.style.transform='scale(1.1)'" 
-                                 onmouseout="this.style.transform='scale(1)'">
-                        </a>
-                        <a href="https://discordapp.com/users/dopamime_16" target="_blank" rel="noopener noreferrer" class="text-white">
-                            <img src="media/Discord.png" alt="Discord" class="img-fluid rounded"
-                                 style="width: 40px; height: 40px; object-fit: contain; transition: transform 0.3s ease;"
-                                 onmouseover="this.style.transform='scale(1.1)'" 
-                                 onmouseout="this.style.transform='scale(1)'">
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCn3Hy3i4MWtsrQvLLq_ASaw" target="_blank" rel="noopener noreferrer" class="text-white">
-                            <img src="media/youtube.png" alt="YouTube" class="img-fluid rounded"
-                                 style="width: 40px; height: 40px; object-fit: contain; transition: transform 0.3s ease;"
-                                 onmouseover="this.style.transform='scale(1.1)'" 
-                                 onmouseout="this.style.transform='scale(1)'">
-                        </a>
-                        <a href="mailto:abubackersiddique29@gmail.com" class="text-white">
-                            <img src="media/mail.png" alt="Email" class="img-fluid rounded"
-                                 style="width: 40px; height: 40px; object-fit: contain; transition: transform 0.3s ease;"
-                                 onmouseover="this.style.transform='scale(1.1)'" 
-                                 onmouseout="this.style.transform='scale(1)'">
-                        </a>
+        <section class="section" data-reveal>
+            <div class="section-header">
+                <div>
+                    <span class="eyebrow">Highlights</span>
+                    <h2>Impact snapshot</h2>
+                </div>
+                <span class="pill">3+ years of building & iterating</span>
+            </div>
+            <div class="grid grid-3">
+                <article class="card">
+                    <div class="card-content">
+                        <span class="tag">Backend & Systems</span>
+                        <h3>Reliable APIs and services</h3>
+                        <p class="meta">Django, FastAPI, WebSockets, STUN/TURN for live communications.</p>
                     </div>
-                    <p class="mb-0 text-muted">&copy; 2025 Abu Bakr Siddique. All rights reserved.</p>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <span class="tag">Frontend</span>
+                        <h3>Interfaces with personality</h3>
+                        <p class="meta">ReactJS experiences with playful micro-interactions and clear narratives.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <span class="tag">AI & Research</span>
+                        <h3>New territories</h3>
+                        <p class="meta">Hands-on with LLMs, SAM, and autonomous agents to solve real problems.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" data-reveal>
+            <div class="section-header">
+                <div>
+                    <span class="eyebrow">What I enjoy building</span>
+                    <h2>Curated focus areas</h2>
+                </div>
+            </div>
+            <div class="floating-grid">
+                <div class="panel">API-first products with thoughtful developer experience.</div>
+                <div class="panel">Realtime communication layers with WebRTC and WebSockets.</div>
+                <div class="panel">Data-backed decisions powered by PostgreSQL and analytics.</div>
+                <div class="panel">Deployments on Azure with sensible observability.</div>
+            </div>
+        </section>
+
+        <section class="section card contact-card" data-reveal>
+            <div class="card-content">
+                <span class="eyebrow">Let’s collaborate</span>
+                <h2>Building something? I can help.</h2>
+                <p class="meta">Reach out for backend architecture, React frontends, or AI-driven features.</p>
+                <div class="cta-row">
+                    <a class="btn btn-primary" href="contact.html">Contact</a>
+                    <a class="btn btn-ghost" href="academic.html">Academic journey</a>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="chips">
+                    <span class="chip">Python</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">C++</span>
+                    <span class="chip">React</span>
+                    <span class="chip">Django</span>
+                    <span class="chip">FastAPI</span>
+                    <span class="chip">Azure</span>
+                    <span class="chip">PostgreSQL</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-shell">
+            <div class="footer-row">
+                <div>© 2025 Abu Bakr Siddique. All rights reserved.</div>
+                <div class="socials">
+                    <a href="https://github.com/AbuBakrSiddique00" target="_blank" rel="noopener noreferrer">
+                        <img src="media/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/abu-bakr-siddique-602190286/" target="_blank" rel="noopener noreferrer">
+                        <img src="media/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://discordapp.com/users/dopamime_16" target="_blank" rel="noopener noreferrer">
+                        <img src="media/Discord.png" alt="Discord">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCn3Hy3i4MWtsrQvLLq_ASaw" target="_blank" rel="noopener noreferrer">
+                        <img src="media/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="mailto:abubackersiddique29@gmail.com">
+                        <img src="media/mail.png" alt="Email">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
